@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+/*            background: aliceblue;*/
+            background: #292A2B;
+            
+        }
+        .main {
+            width: 940px;
+            margin:  0 auto;
+          
+            padding: 10px;
+          
+        }
+        
+        .card {
+           width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            float: left;
+            margin: 5px;
+            
+        }
+        .card:hover {
+            animation: sombra 1s ease;
+            box-shadow: 1px 11px 10px #060606;
+        }
+        .card-interna h3 {
+                color: #FBCA61;
+        }
+        .card-dark .card-interna:hover {
+            background-color: #000;
+        }
+         /*        --------------------*/
+        .card-dark {
+            background-color: #4A4944;
+/*            border: 1px solid #000;*/
+        }
+        
+        .card-dark .card-interna button {
+            background-color: #FF5874;
+            border: 2px solid #000;
+        }
+        .card-dark .card-interna button:hover {
+           border: 2px solid #fff;
+            
+        }        
+        
+        .card-dark .card-interna {
+            background-color: #333132;
+            border: 1px solid #272727;
+        }
+        .card-dark .card-interna p {
+/*            color: #1F6483;     */
+            color: #858774;
+        }
+        /*        --------------------*/
+        
+        .card-primary {
+            background-color: #fff;
+/*            border: 1px solid #ccc;*/
+        }
+        
+        .card-primary .card-interna {
+            background-color: #FFFBED;
+            border: 1px solid #DCD3D3;
+        }
+        
+        .card-primary .card-interna button {
+            background-color: #75D1B5;
+        }
+        .card-primary .card-interna p {
+                color: #716363;
+        }
+        
+         /*        --------------------*/
+
+        
+        @keyframes sombra {
+            from {
+                box-shadow: 1px 1px 1px #060606;
+            }
+            to {
+                box-shadow: 1px 11px 10px #060606;
+            }
+        }
+        
+        .card-interna p,
+        h3 {
+            text-align: center;
+           
+            font-family: sans-serif, verdana;
+            font-size: 14px;
+        }
+        
+        .card-interna{
+            background-color: #F4F4EA;
+            margin: 2px;
+        }
+        
+        .card-interna button {
+            padding: 10px 30px;
+            color: #FFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>CSS3</title>
+</head>
+
+<body>
+ <div class="main">
+  <div class="card card-dark">
+      <div class="card-interna">
+         <button>dark theme</button>
+      </div>
+ 
+  </div>
+   
+    <div class="card card-dark">
+        <div class="card-interna">
+           <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe molestiae iste necessitatibus maiores odio error ad perferendis sequi, vero id.</p>
+            <p>
+                <button>primary theme</button>
+                <button>primary theme</button>
+                <button>primary theme</button>
+                
+            </p>
+        </div>
+        <div class="card-interna">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, veniam.</p>
+        </div>
+    </div>
+    <div class="card card-dark">
+        <div class="card-interna">
+           <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe molestiae iste necessitatibus maiores odio error ad perferendis sequi, vero id.</p>
+            <p>
+                <button>dark theme</button>
+            </p>
+        </div>
+        <div class="card-interna">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, veniam.</p>
+        </div>
+    </div>
+ </div>
+
+</body>
+
+</html>
